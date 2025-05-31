@@ -1,0 +1,524 @@
+/* style.css */
+.college-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .college-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .college-card:hover {
+    background-color: #f9fafb;
+  }
+  
+  .college-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .college-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #250259;
+    margin: 0;
+  }
+  
+/* .college-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .college-card {
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+  }
+  
+  .college-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .college-card h3 {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .college-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  } */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #004aad, #00b4db);
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffdd57;
+} */
+ /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #011c4b 0%, #083165 100%);
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .nav-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+  }
+
+/* .hero-section {
+    background: url('https://images.unsplash.com/photo-1581092580495-1cdb40f6d3ec') no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+    animation: fadeIn 2s ease-in;
+} */
+/* .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://lnct.ac.in/wp-content/uploads/2021/06/campus_view.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Animations 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive 
+  @media (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+  }
+   */
+   .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://lnct.ac.in/wp-content/uploads/2021/05/LNCT-Group-of-colleges-20.jpg') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(10, 25, 50, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    max-width: 800px;
+  }
+  
+  .typing-text {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  .hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    background-color: #38bdf8;
+    color: #000;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    transform: scale(1.05);
+    background-color: #0ea5e9;
+  }
+  
+  /* Floating Icon */
+  .floating-icon {
+
+    width: 60px;
+    position :absolute;
+    top : 35%;
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  
+  /* Animations */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .float-up-down {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  
+ 
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .typing-text {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  
+    .floating-icon {
+      width: 40px;
+    }
+  }
+  
+
+.info-section, .college-section, .course-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+.course {
+    padding: 1.5rem;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* .college-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.college {
+    padding: 1rem;
+    background: #eef2f3;
+    border-left: 5px solid #004aad;
+    border-radius: 5px;
+    font-size: 1.1rem;
+} */
+.admission-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f0f4ff, #e0e7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .admission-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 1s forwards ease-in-out;
+  }
+  
+  .admission-image {
+    flex: 1 1 300px;
+    min-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  
+  .admission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .admission-text {
+    flex: 1 1 400px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .admission-text h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .admission-text p {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 1.5rem;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    background-color: #1e40af;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+/* .apply-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #002d73;
+} */
+
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}

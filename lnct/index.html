@@ -1,0 +1,333 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LNCT Group | Explore Campuses & More</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="nav-container">
+  <div class="nav-inner">
+    <a href="#" class="logo">LNCT <span>Group</span></a>
+    <nav class="nav-links">
+      <a href="#campuses">Campuses</a>
+      <a href="#news">News</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <button id="chatToggle" aria-label="Open Chatbot">Chat</button>
+    </nav>
+    <div class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to LNCT Group</h1>
+    <p>Explore our prestigious campuses, latest news, and upcoming events.</p>
+    <a href="#campuses" class="btn-gradient">Explore Campuses</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://cdn.pixabay.com/photo/2015/11/19/21/10/library-1052024_1280.jpg" alt="Campus View" />
+  </div>
+</section>
+
+<section id="campuses" class="section campuses-section">
+  <h2 class="section-title">Our Campuses</h2>
+  <div class="campus-cards">
+     Campus cards populated via JS 
+  </div>
+</section>
+
+<section id="news" class="section news-section">
+  <h2 class="section-title">Latest News</h2>
+  <div class="news-carousel">
+     News slides populated via JS 
+  </div>
+</section>
+
+<section id="events" class="section events-section">
+  <h2 class="section-title">Upcoming Events</h2>
+  <div class="calendar-container">
+     Calendar rendered via JS 
+  </div>
+</section>
+
+<footer id="contact" class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 LNCT Group | All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook" class="icon-facebook"></a>
+      <a href="#" aria-label="Twitter" class="icon-twitter"></a>
+      <a href="#" aria-label="Instagram" class="icon-instagram"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Chatbot Modal 
+<div id="chatbot" class="chatbot hidden" aria-hidden="true">
+  <div class="chatbot-header">
+    <h3>LNCT AI Assistant</h3>
+    <button id="chatCloseBtn" aria-label="Close Chatbot">&times;</button>
+  </div>
+  <div class="chatbot-messages" id="chatMessages"></div>
+  <form id="chatForm">
+    <input type="text" id="chatInput" placeholder="Ask me about LNCT..." autocomplete="off" required />
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNCT College Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- <nav class="navbar">
+            <h1 class="logo">LNCT</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#colleges">Colleges</a></li>
+                <li><a href="#admission">Admission Open</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+        <nav class="navbar">
+          <div class="nav-left">
+            <img src="https://lnct.ac.in/wp-content/uploads/2021/04/LNCT-Group.png" alt="LNCT Logo" class="nav-logo">
+            <span class="nav-title">LNCT Group of Colleges</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+    </header>
+
+    <!-- <section id="home" class="hero-section">
+        <h2>Welcome to LNCT Group of Colleges</h2>
+        <p>Your future begins here</p>
+    </section> -->
+    <section id="home" class="hero-section">
+      
+  <div class="hero-overlay">
+   
+    <div class="hero-content">
+   
+      <h2 class="typing-text" id="hero-heading"></h2>
+      <p>Shaping Tomorrow’s Leaders</p>
+      <a href="#admission" class="hero-btn">Apply Now</a>
+    
+     
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Education Icon" class="floating-icon" />
+  </div>
+</section>
+
+    
+
+    <section id="about" class="info-section">
+        <h2>About Us</h2>
+        <p>LNCT Group is one of Central India's top educational institutions offering world-class education in engineering, medical, and management studies.</p>
+    </section>
+
+    <section id="courses" class="course-section">
+        <h2>Courses Offered</h2>
+        <div class="course-grid">
+            <div class="course">B.Tech</div>
+            <div class="course">M.Tech</div>
+            <div class="course">MBA</div>
+            <div class="course">MCA</div>
+            <div class="course">Pharmacy</div>
+            <div class="course">Nursing</div>
+        </div>
+    </section>
+
+    <!-- <section id="colleges" class="college-section">
+        <h2>Our Colleges</h2>
+        <div class="college-list">
+            <div class="college">LNCT Bhopal</div>
+            <div class="college">LNCT&S Bhopal</div>
+            <div class="college">LNCTE Indore</div>
+            <div class="college">LNCT Jabalpur</div>
+        </div>
+    </section> -->
+    <section id="colleges" class="college-section">
+      <h2>Our Colleges</h2>
+      <div class="college-list">
+          <a class="college-card" href="https://jnctbhopal.ac.in" target="_blank">
+              <img src="https://jnctbhopal.ac.in/logo.png" alt="JNCT Bhopal">
+              <h3>JNCT Bhopal</h3>
+          </a>
+          <a class="college-card" href="https://lnct.ac.in" target="_blank">
+              <img src="https://Inct.ac.in/logo.png" alt="LNCT">
+              <h3>LNCT</h3>
+          </a>
+          <a class="college-card" href="https://lnctvu.ac.in" target="_blank">
+              <img src="https://Inctvu.ac.in/logo.png" alt="INCT VU">
+              <h3>LNCT VU</h3>
+          </a>
+        
+          <a class="college-card" href="https://jayantjaggery.com" target="_blank">
+              <img src="https://jayantjaggery.com/logo.png" alt="Jayant Jaggery">
+              <h3>Jayant Jaggery</h3>
+          </a>
+          <a class="college-card" href="https://indorelnmc.in" target="_blank">
+              <img src="https://indorelnmc.in/logo.png" alt="LNMC Indore">
+              <h3>LNMC Indore</h3>
+          </a>
+          <a class="college-card" href="https://jncn.ac.in" target="_blank">
+              <img src="https://jncn.ac.in/logo.png" alt="JNCN">
+              <h3>JNCN</h3>
+          </a>
+          <a class="college-card" href="https://cecbilaspur.ac.in" target="_blank">
+              <img src="https://cecbilaspur.ac.in/logo.png" alt="CEC Bilaspur">
+              <h3>CEC Bilaspur</h3>
+          </a>
+          <a class="college-card" href="https://lncps.in" target="_blank">
+              <img src="https://Incps.in/logo.png" alt="INCPS">
+              <h3>LNCPS</h3>
+          </a>
+          <a class="college-card" href="https://lnctuj.com" target="_blank">
+              <img src="https://Inctuj.com/logo.png" alt="INCT UJ">
+              <h3>LNCT UJ</h3>
+          </a>
+          <a class="college-card" href="https://lncts.in" target="_blank">
+              <img src="https://Incts.in/logo.png" alt="INCTS">
+              <h3>LNCTS</h3>
+          </a>
+          <a class="college-card" href="https://kalchuricontractors.ltd" target="_blank">
+              <img src="https://kalchuricontractors.ltd/logo.png" alt="Kalchuri Contractors">
+              <h3>Kalchuri Contractors</h3>
+          </a>
+          <a class="college-card" href="https://parvatisweetners.co.in" target="_blank">
+              <img src="https://parvatisweetners.co.in/logo.png" alt="Parvati Sweetners">
+              <h3>Parvati Sweetners</h3>
+          </a>
+          <a class="college-card" href="https://lnctmca.in" target="_blank">
+              <img src="https://Inctmca.in/logo.png" alt="INCT MCA">
+              <h3>LNCT MCA</h3>
+          </a>
+          <a class="college-card" href="https://vitamax.co.in" target="_blank">
+              <img src="https://vitamax.co.in/logo.png" alt="Vitamax">
+              <h3>Vitamax</h3>
+          </a>
+          <a class="college-card" href="https://dabraalcobrew.com" target="_blank">
+              <img src="https://dabraalcobrew.com/logo.png" alt="Dabra Alcobrew">
+              <h3>Dabra Alcobrew</h3>
+          </a>
+          <a class="college-card" href="https://ipsbilaspur.com" target="_blank">
+              <img src="https://ipsbilaspur.com/logo.png" alt="IPS Bilaspur">
+              <h3>IPS Bilaspur</h3>
+          </a>
+          <a class="college-card" href="https://Lnayurvedcollege.com" target="_blank">
+              <img src="https://Inayurvedcollege.com/logo.png" alt="IN Ayurved College">
+              <h3>LN Ayurved College</h3>
+          </a>
+          <a class="college-card" href="https://jnctpu.edu.in" target="_blank">
+              <img src="https://jnctpu.edu.in/logo.png" alt="JNCT PU">
+              <h3>JNCT PU</h3>
+          </a>
+          <a class="college-card" href="https://indorelnmc.com" target="_blank">
+              <img src="https://indorelnmc.com/logo.png" alt="LNMC Indore (com)">
+              <h3>LNMC Indore (com)</h3>
+          </a>
+          <a class="college-card" href="https://ananjay.co.in" target="_blank">
+              <img src="https://ananjay.co.in/logo.png" alt="Ananjay">
+              <h3>Ananjay</h3>
+          </a>
+          <a class="college-card" href="https://lnctworldschools.com" target="_blank">
+              <img src="https://Inctworldschools.com/logo.png" alt="INCT World Schools">
+              <h3>LNCT World Schools</h3>
+          </a>
+          <a class="college-card" href="https://lncpbhopal.in" target="_blank">
+              <img src="https://Incpbhopal.in/logo.png" alt="INCP Bhopal">
+              <h3>LNCP Bhopal</h3>
+          </a>
+          <a class="college-card" href="https://lnctbhopal.in" target="_blank">
+              <img src="https://Inctbhopal.in/logo.png" alt="INCT Bhopal">
+              <h3>LNCT Bhopal</h3>
+          </a>
+          <a class="college-card" href="https://lncte.in" target="_blank">
+              <img src="https://Incte.in/logo.png" alt="INCTE">
+              <h3>LNCTE</h3>
+          </a>
+          <a class="college-card" href="https://lnctbplindorecampus.in" target="_blank">
+              <img src="https://Inctbplindorecampus.in/logo.png" alt="INCT Indore Campus">
+              <h3>LNCT Indore Campus</h3>
+          </a>
+          <a class="college-card" href="https://lnctrishiraj.ac.in" target="_blank">
+              <img src="https://Inctrishiraj.ac.in/logo.png" alt="INCT Rishiraj">
+              <h3>LNCT Rishiraj</h3>
+          </a>
+          <a class="college-card" href="https://lnctsopindore.in" target="_blank">
+              <img src="https://Inctsopindore.in/logo.png" alt="INCTSOP Indore">
+              <h3>LNCTSOP Indore</h3>
+          </a>
+          <a class="college-card" href="https://ananjaypharma.co.in" target="_blank">
+              <img src="https://ananjaypharma.co.in/logo.png" alt="Ananjay Pharma">
+              <h3>Ananjay Pharma</h3>
+          </a>
+          <a class="college-card" href="https://clchomeopathy.in" target="_blank">
+              <img src="https://clchomeopathy.in/logo.png" alt="CLC Homeopathy">
+              <h3>CLC Homeopathy</h3>
+          </a>
+          <a class="college-card" href="https://lnctguru.com" target="_blank">
+              <img src="https://lnctguru.com/logo.png" alt="INCT Guru">
+              <h3>LNCT Guru</h3>
+          </a>
+          <a class="college-card" href="https://lnctu.ac.in" target="_blank">
+              <img src="https://lnctu.ac.in/logo.png" alt="INCT University">
+              <h3>LNCT University</h3>
+          </a>
+      </div>
+  </section>
+
+    <!-- <section id="admission" class="info-section">
+        <h2>Admissions Open</h2>
+        <p>Apply now to be a part of Central India's most prestigious institution.</p>
+        <a href="https://admissions.lnct.ac.in/" class="apply-btn">Apply Now</a>
+    </section> -->
+    <section id="admission" class="admission-section">
+      <div class="admission-content">
+        <div class="admission-image">
+          <img src="https://admissions.lnct.ac.in/assets/images/lnct-campus.jpg" alt="LNCT Campus">
+        </div>
+        <div class="admission-text">
+          <h2>Admissions Open</h2>
+          <p>Apply now to be a part of Central India's most prestigious institution.</p>
+          <a href="https://admissions.lnct.ac.in/" class="apply-btn">Apply Now</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" class="info-section">
+        <h2>Contact Us</h2>
+        <p>Email: info@lnct.ac.in | Phone: 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LNCT Group. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
