@@ -1,88 +1,3 @@
-<!-- <!DOCTYPE html> 
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>LNCT Group | Explore Campuses & More</title>
-<link rel="stylesheet" href="styles.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
-<header class="nav-container">
-  <div class="nav-inner">
-    <a href="#" class="logo">LNCT <span>Group</span></a>
-    <nav class="nav-links">
-      <a href="#campuses">Campuses</a>
-      <a href="#news">News</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact</a>
-      <button id="chatToggle" aria-label="Open Chatbot">Chat</button>
-    </nav>
-    <div class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" tabindex="0">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-text">
-    <h1>Welcome to LNCT Group</h1>
-    <p>Explore our prestigious campuses, latest news, and upcoming events.</p>
-    <a href="#campuses" class="btn-gradient">Explore Campuses</a>
-  </div>
-  <div class="hero-image">
-    <img src="https://cdn.pixabay.com/photo/2015/11/19/21/10/library-1052024_1280.jpg" alt="Campus View" />
-  </div>
-</section>
-
-<section id="campuses" class="section campuses-section">
-  <h2 class="section-title">Our Campuses</h2>
-  <div class="campus-cards">
-     Campus cards populated via JS 
-  </div>
-</section>
-
-<section id="news" class="section news-section">
-  <h2 class="section-title">Latest News</h2>
-  <div class="news-carousel">
-     News slides populated via JS 
-  </div>
-</section>
-
-<section id="events" class="section events-section">
-  <h2 class="section-title">Upcoming Events</h2>
-  <div class="calendar-container">
-     Calendar rendered via JS 
-  </div>
-</section>
-
-<footer id="contact" class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 LNCT Group | All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#" aria-label="Facebook" class="icon-facebook"></a>
-      <a href="#" aria-label="Twitter" class="icon-twitter"></a>
-      <a href="#" aria-label="Instagram" class="icon-instagram"></a>
-    </div>
-  </div>
-</footer>
-
-<!-- Chatbot Modal 
-<div id="chatbot" class="chatbot hidden" aria-hidden="true">
-  <div class="chatbot-header">
-    <h3>LNCT AI Assistant</h3>
-    <button id="chatCloseBtn" aria-label="Close Chatbot">&times;</button>
-  </div>
-  <div class="chatbot-messages" id="chatMessages"></div>
-  <form id="chatForm">
-    <input type="text" id="chatInput" placeholder="Ask me about LNCT..." autocomplete="off" required />
-    <button type="submit">Send</button>
-  </form>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -300,11 +215,7 @@
       </div>
   </section>
 
-    <!-- <section id="admission" class="info-section">
-        <h2>Admissions Open</h2>
-        <p>Apply now to be a part of Central India's most prestigious institution.</p>
-        <a href="https://admissions.lnct.ac.in/" class="apply-btn">Apply Now</a>
-    </section> -->
+    
     <section id="admission" class="admission-section">
       <div class="admission-content">
         <div class="admission-image">
@@ -317,7 +228,14 @@
         </div>
       </div>
     </section>
-    
+
+   
+<section id="news-carousel" class="news-section">
+  <h2>Latest News & Events</h2>
+  <div class="news-container" id="newsContainer">
+    <!-- News cards will be inserted here by JS -->
+  </div>
+</section>
 
     <section id="contact" class="info-section">
         <h2>Contact Us</h2>
